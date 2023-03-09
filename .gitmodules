@@ -1,0 +1,3 @@
+[submodule "markdown_generator/CV/biblatex-publist"]
+	path = markdown_generator/CV/biblatex-publist
+	url = https://github.com/cmhyett/biblatex-publist.git
