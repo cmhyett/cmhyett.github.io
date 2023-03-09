@@ -24,6 +24,10 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+\usepackage[bibstyle=publist,plauthorhandling=highlight,backend=biber]{biblatex}
+\plauthorname[Criston]{Hyett}
+\bibliography{./publications.bib}                        % 'publications' is the name of a BibTeX file
+
 % font loading
 % for luatex and xetex, do not use inputenc and fontenc
 % see https://tex.stackexchange.com/a/496643
@@ -58,7 +62,6 @@
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
 \renewcommand{\listitemsymbol}{}
 %   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
 
 % bibliography with mutiple entries
 %\usepackage{multibib}
@@ -67,12 +70,34 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{National Renewable Energy Laboratory}{Concerning: Post-Undergraduate/Graduate (Year-Long) Intern - Power System Modeling \& Analysis}
+% \date{\today}
+% \opening{To whom it may concern,}
+% \closing{I appreciate your consideration,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% I am a 4th year student in University of Arizona's Applied Mathematics PhD program. As is visible from the attached CV, much of my work as part of the PhD has focused on applications in reduced-order modeling of turbulence. However, my advisor (Dr. Misha Chertkov) and I recently began an effort quantifying uncertainty in optimal natural gas flows originating from intermittency of renewables in the energy grid.
+
+% I became very excited by this challenging modeling problem, and its immediate importance as much of the world looks to transition to an increasing share of renewables. In particular, the importance of quantifying the effects of renewable intermittency on joint power systems, to the eventual end of providing security and robustness guarantees. 
+
+% If selected for this position, I will contribute my knowledge of optimization, dynamical systems, and reduced-order modeling, to develop better models to support the energy transition. I hope to learn more about power system dynamics and considerations, in addition to methodologies to capture effects of the inherent intermittency of renewables on joint power systems.
+
+% \vspace{1in}
+% \makeletterclosing
+
+% \newpage 
+
+% -----       resume       ---------------------------------------------------------
 \makecvtitle
 \section{Fields Of Interest}
 \hspace{1in}Physics-Informed Machine Learning, Reduced-Order Modeling, Uncertainty Quantification,
 
-\hspace{1in}Renewables Integration, Power System Robustness, Reduced Models of Turbulence
+\hspace{1in}Renewables Integration/Power System Robustness, Reduced Models of Turbulence
 
 \section{Education}
 \cventry{2019-2024  (expected)}{Ph.D.}{University of Arizona}{Tucson, AZ}{}{Applied Mathematics}
@@ -90,13 +115,12 @@
 
 \hspace{1in} We work to determine optimal flows on a natural gas network under the coupled natural gas
 
-\hspace{1in} and energy grids upon inclusion of renewable energies.
+\hspace{1in} and energy grids upon inclusion of intermittent renewable energies.
 
 
 \section{Experience}
 \cventry{2020-present}{Graduate Research Assistant}{University of Arizona}{Tucson, AZ}{}{}
-\cventry{Summer 2021}{Graduate Student Researcher}{Los Alamos National Labs}{Los Alamos, NM}{}{}
-\cventry{Summer 2020}{Graduate Student Researcher}{Los Alamos National Labs}{Los Alamos, NM}{}{}
+\cventry{Summers 2020-22}{Graduate Student Researcher}{Los Alamos National Labs}{Los Alamos, NM}{}{}
 \cventry{2019-2020}{Graduate Teaching Assistant}{University of Arizona}{Tucson, AZ}{}{}
 \cventry{2016-2019}{Software Engineer II}{Raytheon Missile Systems}{Tucson, AZ}{}{}
 
@@ -104,8 +128,11 @@
 \cvitem[0cm]{Nov, 2022}{Applicability of Machine Learning Methodologies to Model the Statistical Evolution of the Coarse-Grained Velocity Gradient Tensor}
 \cvitem[0.2cm]{}{\hspace{0.5cm}\textit{APS Division of Fluid Dynamics Meeting}}
 
-\cvitem[0cm]{Nov, 2022}{Interpreting Interpretable Machine Learning: Insights gleaned modeling the velocity gradient tensor in turbulence}
+\cvitem[0cm]{Nov, 2022}{Interpreting Machine Learning: Insights gleaned modeling the velocity gradient tensor in turbulence}
 \cvitem[0.2cm]{}{\hspace{0.5cm}\textit{SIAM Student Brownbag}}
+
+\cvitem[0cm]{Aug, 2022}{Machine Learning Lagrangian Tetrads: Reduced-Order Modeling of Turbulence}
+\cvitem[0.2cm]{}{\hspace{0.5cm}\textit{University of Arizona -- Los Alamos Days}}
 
 \cvitem[0cm]{Nov, 2021}{Machine Learning Statistical Evolution of the Coarse-Grained Velocity Gradient Tensor}
 \cvitem[0.2cm]{}{\hspace{0.5cm}\textit{APS Division of Fluid Dynamics Meeting}}
@@ -116,10 +143,6 @@
 \cvitem[0cm]{Nov, 2020}{Machine Learning Statistical Lagrangian Geometry of Turbulence}
 \cvitem[0.2cm]{}{\hspace{0.5cm}\textit{APS Division of Fluid Dynamics Meeting}}
 
-\section{Teaching}
-\cvitem{Fall 2019}{Math 112: College Algebra}
-\cvitem{Spring 2020}{Math 112: College Algebra}
-
 \section{Fellowships}
 \cvitemwithcomment{Jan 2022 - May 2022}{Roots for Resilience Data Science Scholarship}{University of Arizona Data Science Institute, Arizona Institute for Resilience}
 
@@ -128,19 +151,18 @@
 \cvitemwithcomment{C/C++}{Proficient}{Used extensively in an embedded environment at Raytheon Missile Systems}
 \cvitemwithcomment{Bash}{Comfortable}{Basic functionality used daily}
 \cvitemwithcomment{Python}{Comfortable}{Used weekly}
-\cvitemwithcomment{R}{Beginner}{}
 \cvitemwithcomment{Matlab}{Comfortable}{Interpretted monthly}
 \cvitemwithcomment{Cuda}{Beginner}{}
-\cvitemwithcomment{Ada}{Comfortable}{Interpretted daily while at RMS}
 
 \section{Computer skills}
 \cvitem{Open Software}{git, github, \LaTeX}
 \cvitem{HPC}{Slurm}
-\cvitem{Methodologies}{CI (Jenkins), TDD, Agile}
+\cvitem{Methodologies}{CI, TDD, Agile}
 \cvitem{Operating Systems}{Linux, Windows}
 
 \section{Service and Leadership}
-\cvitem[0.2cm]{Aug 2021 - present}{SIAM Brownbag Student Colloquium Organizer}
+\cvitem[0.2cm]{2021-2022}{Organized and presented ``Introduction to HPC'' seminar for Math PhD students quarterly}
+\cvitem[0.2cm]{Aug 2021 - May 2022}{SIAM Brownbag Student Colloquium Organizer}
 \cvitem[0.2cm]{Jul 2018 - Jul 2019}{Certified Scrum Master: Scaled Agile Framework}
 
 \section{Human Languages}
@@ -150,36 +172,18 @@
 \cvitemwithcomment{Amharic}{Beginner}{}
 
 \section{Contact}
-\cvitemwithcomment{Phone}{+1-520.651.1433}{}
+\cvitemwithcomment{Phone}{+1.520.651.1433}{}
 \cvitemwithcomment{Address}{2525 E Prince Rd, Apt 61, Tucson AZ, 85716}{}
 \cvitemwithcomment{Email}{cmhyett@math.arizona.edu}{}
 
-
-% \clearpage
-% %-----       letter       ---------------------------------------------------------
-% % recipient data
-% \recipient{Roots for Resilience in Data Science Scholarship Program}{Arizona Institues for Resilience \& Data Science Institute, University of Arizona}
-% \date{\today}
-% \opening{To whom it may concern,}
-% \closing{I appreciate your consideration,}
-% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-% \makelettertitle
-
-% %\textbf{How your interests fit the program + What you would work on under the auspices of the program?}
-%    I, along with an interdisciplinary group from the University of Arizona and Los Alamos National Labs, work to develop reduced order models of turbulent flows. Turbulence continues to produce some of the largest and most intricate datasets in the world, and our research works to find spatiotemporal patterns that allow a more concise description of this ubiquitous - yet still mysterious - phenomenon. Further, turbulence provides a challenging proving ground for the latest in data science and machine learning.
-%    My work under this program would be twofold. First, create standardized, parallelizable templates to access the John Hopkins Turbulence Database (JHTDB) and enable the rapid prototyping of data-driven methodologies. JHTDB provides upwards of 430 Terabytes of highly resolved turbulence data along with powerful server-side preprocessing. This combination is an incredible enabler of data science in turbulence, however the interface is feature-rich and naive queries are prohibitively expensive due to the size and complexity of the datasets - I would produce a short document along with efficient templates to shorten the learning curve for researchers wanting to access the database. Second, I plan to dive deep into containers and export the resulting knowledge to my colleagues in the Mathematics department to allow for archive-quality, reproducible, scientific repositories.
-
-%    % \textbf{How would the applied math program would benefit?}
-%    After completion of this work, researchers interested in applying data-driven methodologies to turbulence would have efficient access to a large and vetted database. Further via presentations to my colleagues, I would diffuse experience using containers to create repositories with guaranteed reproducibility.
-
-% \makeletterclosing
+\newpage
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\section{Publications \& Conference Proceedings}
 \nocite{*}
-\bibliographystyle{plain}
-\bibliography{../publications.bib}                        % 'publications' is the name of a BibTeX file
+\printbibliography[heading=none]
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}

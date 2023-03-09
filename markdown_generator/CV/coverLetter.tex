@@ -1,0 +1,93 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2021 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[bibstyle=publist,plauthorhandling=highlight,backend=biber]{biblatex}
+\plauthorname[Criston]{Hyett}
+\bibliography{./publications.bib}                        % 'publications' is the name of a BibTeX file
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% personal data
+\name{Criston}{Hyett}
+\address{2525 E Prince Rd, Apt 61}{Tucson, AZ, 85716}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~520.651.1433}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{cmhyett@math.arizona.edu}                               % optional, remove / comment the line if not wanted
+\homepage{cmhyett.github.io/home/}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[github]{cmhyett}                              % optional, remove / comment the line if not wanted
+\social[googlescholar]{Criston Hyett}            % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+\renewcommand{\listitemsymbol}{}
+%   to redefine the bibliography heading string ("Publications")
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{National Renewable Energy Laboratory}{Concerning: Graduate (Year-Long) Intern – Dynamic Power System Modeling}
+\date{\today}
+\opening{To whom it may concern,}
+\closing{I appreciate your consideration,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am a 4th year student in University of Arizona's Applied Mathematics PhD program. As is visible from the attached CV, much of my work as part of the PhD has focused on applications in reduced-order modeling of turbulence. However, my advisor (Dr. Misha Chertkov) and I recently began an effort quantifying uncertainty in optimal natural gas flows originating from intermittency of renewables in the energy grid.
+
+I became very excited by this challenging modeling problem, and its immediate importance as much of the world looks to transition to an increasing share of renewables. In particular, the importance of quantifying the effects of renewable intermittency on joint power systems, to the eventual end of providing security and robustness guarantees. 
+
+If selected for this position, I will contribute my knowledge of optimization, dynamical systems, and reduced-order modeling, to develop better models to support the energy transition. I hope to learn more about power system dynamics and considerations, in addition to methodologies to capture effects of the inherent intermittency of renewables on joint power systems.
+
+\vspace{1in}
+\makeletterclosing
+
+
+\end{document}

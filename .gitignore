@@ -1,0 +1,10 @@
+*~
+*.aux
+*.bbl
+*.log
+*.out
+*.dvi
+*.xml
+*.bst
+*.bcf
+*.blg
