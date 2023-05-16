@@ -10,4 +10,4 @@ redirect_from:
 
 ---
 
-![QR Code to this website](qrCode.png)
+![QR Code to personal website](../images/qrCode.png)
