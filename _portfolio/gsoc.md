@@ -11,3 +11,4 @@ tags:
 ---
 
 Here I will document work done in fulfillment of the project _NumFocus & SciML, PDEs on Graphs_.
+[MethodOfLines.jl pull request](https://github.com/SciML/MethodOfLines.jl/pull/285)
