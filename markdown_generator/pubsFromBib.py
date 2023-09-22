@@ -26,21 +26,49 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
+    "pubs_proceeding": {
+        "file" : "./CV/publications.bib",
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
-        
     },
-    "journal":{
-        "file": "publications.bib",
+    "pubs_journal":{
+        "file": "./CV/publications.bib",
         "venuekey" : "journal",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
-    } 
+    },
+    "pubs_misc":{
+        "file": "./CV/publications.bib",
+        "venuekey" : "eprint",
+        "venue-pretext" : "arXiv",
+        "collection" : {"name":"publications",
+                        "permalink":"/publication/"}
+    },
+    "talks_proceeding": {
+        "file" : "./CV/talks.bib",
+        "venuekey": "booktitle",
+        "venue-pretext": "In the proceedings of ",
+        "collection" : {"name":"talks",
+                        "permalink":"/talk/"}
+        
+    },
+    "talks_journal":{
+        "file" : "./CV/talks.bib",
+        "venuekey" : "journal",
+        "venue-pretext" : "",
+        "collection" : {"name":"talks",
+                        "permalink":"/talk/"}
+    },
+    "talks_misc":{
+        "file" : "./CV/talks.bib",
+        "venuekey" : "eprint",
+        "venue-pretext" : "arXiv",
+        "collection" : {"name":"talks",
+                        "permalink":"/talk/"}
+    }        
 }
 
 html_escape_table = {
@@ -56,7 +84,7 @@ def html_escape(text):
 
 for pubsource in publist:
     parser = bibtex.Parser()
-    
+    print(publist)
     if (not os.path.isfile(publist[pubsource]["file"])):
         continue;
 
@@ -154,8 +182,8 @@ for pubsource in publist:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
             md_filename = os.path.basename(md_filename)
-
-            with open("../_publications/" + md_filename, 'w') as f:
+            print("../_" + publist[pubsource]["collection"]["name"] + "/" + md_filename)
+            with open("../_" + publist[pubsource]["collection"]["name"] + "/" + md_filename, 'w') as f:
                 f.write(md)
             print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference
