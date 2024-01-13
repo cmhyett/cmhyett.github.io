@@ -1,0 +1,132 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2021 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+%\renewcommand*{\namefont}{\fontsize{30}{30}\mdseries\upshape}
+\usepackage[scale=0.85]{geometry}
+\usepackage{verbatim}
+%\setlength{\footskip}{136.00005pt}
+\newlength\Colsep
+\setlength\Colsep{10pt}
+\newlength\Collen
+\setlength\Collen{5cm}
+
+\usepackage[bibstyle=publist,plauthorhandling=highlight,plnumbered=false,backend=biber]{biblatex}
+\plauthorname[Criston]{Hyett}
+\renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
+
+\addbibresource{pubs.bib}
+\addbibresource{confs.bib}
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% personal data
+\name{Criston}{Hyett}
+\email{cmhyett@math.arizona.edu}                               % optional, remove / comment the line if not wanted
+\homepage{cmhyett.github.io}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[github]{cmhyett}                              % optional, remove / comment the line if not wanted
+\social[googlescholar]{Criston Hyett}            % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+
+% -----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-15mm}
+\section{Fields Of Interest}
+\hspace{1in}Dynamical Systems \& Optimal Control, Reduced-Order Modeling,
+
+\hspace{1in}Physics-Informed Machine Learning, Uncertainty Quantification
+
+\section{Education}
+\cventry{2019-2025  (expected)}{Ph.D.}{University of Arizona}{Tucson, AZ}{}{Applied Mathematics}
+\cventry{2019-2021}{M.S.}{University of Arizona}{Tucson, AZ}{}{Applied Mathematics}
+\cventry{2012-2016}{B.S.}{University of Arizona}{Tucson, AZ}{}{Mathematics \& Physics}
+
+\section{Research}
+
+\cvitem{2021-present}{\textbf{Enabling PDE Constrained Optimization via Differentiable Solvers}}
+
+\hspace{1in}We approach PDE constrained optimization from a ``physics-first'' perspective, by creating
+
+\hspace{1in}efficient PDE solvers compatible with backward-mode autodifferentiation for favorable
+
+\hspace{1in}computation scaling with parameter dimension. A motivating problem for this work is performing
+
+\hspace{1in}optimal gas scheduling with respect to cost and uncertainty.
+
+\cvitem{2020-present}{\textbf{Physics-Informed Machine Learning for Heavy-Tailed Distributions}}
+
+\hspace{1in}Implementing custom PyTorch modules, we embed physical knowledge into machine learning
+
+\hspace{1in}models to learn reduced-order models for fine-scale structures in turbulent flow.
+
+\section{Work Experience}
+\cventry{Summer 2023}{Google Summer of Code contributor}{NumFocus/Julia SciML}{}{}
+{\begin{itemize}
+  \item Implemented staggered-grid symbolic discretization for PDEs in MethodOfLines.jl
+  \item Modified, scheduled and analyzed CI jobs
+\end{itemize}
+}
+\cventry{2020-present}{Graduate Research Assistant}{University of Arizona}{Tucson, AZ}{}{}
+\cventry{Summers 2020-22}{Graduate Student Researcher}{Los Alamos National Labs}{Los Alamos, NM}{}{}
+\cventry{2016-2019}{Software Engineer II}{Raytheon Missile Systems}{Tucson, AZ}{}
+{\begin{itemize}
+ \item Designed, implemented, tested and integrated signal processing algorithms in an embedded environment
+ \item Mentored other engineers, acted as scrum master, interfaced with customers and stakeholders
+ \end{itemize}
+}
+
+\vspace{-1cm}
+\begin{minipage}[c][\Collen][c]{\dimexpr0.5\textwidth-0.5\Colsep\relax}
+  \section{Computer Languages}
+  \cvitem{Proficient}{Julia, Python, C/C++}
+  \cvitem{Comfortable}{Bash, Matlab}
+  \cvitem{Beginner}{Cuda}
+  \cvitem{}{}
+\end{minipage}
+\begin{minipage}[c][\Collen][c]{\dimexpr0.5\textwidth-0.5\Colsep\relax}
+\section{Computer skills}
+\cvitem{Open SW}{git/workflow, \LaTeX, Linux}
+\cvitem{HPC}{Slurm, Docker,}
+\cvitem{}{parallel \& accelerated computing}
+\cvitem{Methodologies}{CI, TDD, Agile, OOP}
+\end{minipage}
+\vspace{-1cm}
+\section{Service and Leadership}
+\cvitem[0.2cm]{Mar 2023}{Graduate Mentor for American Statistical Association DataFest Competition}
+\cvitem[0.2cm]{Quarterly 2021-2022}{Organized and presented ``Introduction to HPC'' seminar for Math PhD students}
+\cvitem[0.2cm]{Aug 2021 - May 2022}{SIAM Brownbag Student Colloquium Organizer}
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
