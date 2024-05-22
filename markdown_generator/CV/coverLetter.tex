@@ -73,22 +73,35 @@
 
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{National Renewable Energy Laboratory}{Concerning: Graduate Intern - Co-simulation for Distributed Clean Energy}
+\recipient{New York University, Courant Institute of Mathematical Sciences}{Concerning: Postdoctoral Researcher - NYU Courant - Benjamin Peherstorfer's Group}
 \date{\today}
 \opening{To whom it may concern,}
 \closing{I appreciate your consideration,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-I am currently a PhD Candidate in the University of Arizona's Applied Mathematics program, applying numerical methods to simulate gas flows across networks - with the eventual goal to create a high-fidelity coupled simulation/optimization framework for gas and energy grids. I am particularly interested in the interaction between the coupled dynamics and network topology as energy generation transitions from traditional, concentrated, deterministic sources to distributed, stochastic renewables.
 
-Before entering graduate school, I worked for 3 years writing algorithms in an embedded environment using C/C++. This experience was invaluable, and taught me that I thrive at the interface between modeling of complicated dynamical systems and efficient implementations of algorithms to simulate them.
+%I am writing to apply as a postdoctoral researcher in Dr. Peherstorfer's group. I was particularly interested in the solicitation due to the stated focus on scientific machine learning and uncertainty quantification.n
+I write to express my keen interest in the postdoctoral researcher position in Dr. Peherstorfer's group. I am particularly drawn to this opportunity due to the group's emphasis on advancing research in the mathematics of scientific machine learning and uncertainty quantification, as outlined in the solicitation. This specific focus resonates with my academic expertise, and aligns with my research interests and goals of professional growth.
 
-As I near the end of the PhD, I seek to enrich my knowledge of power system dynamics, and create connections that will propel me into a career in the field of energy modeling.
+%I am advised by Dr. Misha Chertkov working mainly on 2 projects:
+In my current work as a PhD candidate in applied mathematics at the University of Arizona (UofA), advised by Dr. Misha Chertkov, I work mainly on 2 projects:
+\begin{enumerate}
+\item \textbf{Physics-informed machine learning (PIML) for Lagrangian turbulence.} In work from an interdisciplinary group from UofA and Los Alamos National Laboratory, we blend phenomenology and PIML to create reduced-order models for the statistical evolution of the Lagrangian velocity gradient tensor, with a focus on interpretability to inform turbulence theory.
+  We presented our work at the American Physical Society Division of Fluid Dynamics conference, entitled ``Velocity gradient prediction using parameterized Lagrangian deformation models'' and plan to publish these findings in 2024.
+  There are similarities between the approach we take and recent work from the group in neural Galerkin schemes and model reduction; I envision productive collaboration in this area.
+  % we reduce ove from Navier-Stokes to a large number of nonlocal ODEs
+% (We have not completed a paper here yet - but have one in its final stages following our APS talk of the same name ``Velocity gradient prediction using parameterized Lagrangian deformation models'' listed in the CV).
+Further, while any view of turbulence must be inherently statistical, most applications of machine learning to the field seek to predict mean quantities - I see plenty of future work here via enriching predicted statistics, increasing the usability of trained ML models by quantifying/controlling errors, and more thoroughly leveraging the Lagrangian perspective.
 
-NREL seems a natural fit for my skillset and curiosity, as a leader in energy system modeling, especially the energy transition. While I am currently unexperienced in power-system modeling, I have a strong physics background, with a solid understanding of networks and dynamical systems. I hope to get a chance to learn and contribute to the research at NREL.
+\item \textbf{Simulation, analysis and control of natural gas networks.} We partner with the operations and planning division of NOGA Israel (Israel's independent system operator) to approach the problem of optimal gas flow (OGF) on a network using a physics-adherent approach. We published and presented our first work, largely analyzing networked gas-flow behavior under uncertainty via Monte Carlo, in Pipeline Simulation Interest Group's 2023 meeting. Our recently completed work focuses on OGF by implementing differentiable simulators to confine the optimization to the solution manifold of the gas-flow PDEs. We've submitted, and hope to present and publish this at Power Systems Computation Conference 2024. Finally, ongoing work looks to create a coupled natural gas/electric grid dynamic system for co-optimization. Integrating multi-fidelity modeling in both the physical and probabilistic spaces will be vital to mitigate computational complexity while creating a trustable product for our industry partners.
+\end{enumerate}
 
-\vspace{1in}
+These projects blend together dynamical systems, domain knowledge, and machine learning. This principled approach has allowed us to inform the phenomenology of turbulence and enrich the planning and operation of regional natural gas networks.
+
+During the postdoc I look to continue application of these methodologies on scientific and engineering challenges, with the increased focus on the development of the methodologies themselves. To this end, I believe Dr. Peherstorfer's group would be a productive fit. We share the same vision for scientific machine learning, while approaching the interdisciplinary interface from different directions. Targets of my professional growth are the mathematical perspectives of efficient uncertainty quantification, and richer model-reduction strategies to inform physical theory. Finally, I hope to contribute and mentor through my knowledge of software development, computation, and physical insight.
+
+\vspace{0.4in}
 \makeletterclosing
 
 
