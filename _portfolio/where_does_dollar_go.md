@@ -24,3 +24,7 @@ However, if we relinquish the hope of a fully descriptive mechanistic model of t
 The creation and learning of this model, with particular emphasis on estimating the flows of wealth, is the main study of this article. We proceed in a series of model enrichment, beginning with the coarsest model possible, and gradually adding data-driven mechanisms that allow finer understanding of the flows of wealth.
 
 
+## Definitions
+We must first admit a series of definitions to set the analysis on firm (if disputable) footing.
+
+First and foremost, what is wealth and who can own it? One might point to income, or net worth, or GDP per capita
