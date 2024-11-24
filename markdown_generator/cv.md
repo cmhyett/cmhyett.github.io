@@ -94,3 +94,4 @@ Talks
 References
 ======
 * PhD Advisor, Dr. Michael Chertkov
+* PhD Advisor, Dr. Daniel Livescu
