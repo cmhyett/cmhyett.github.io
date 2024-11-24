@@ -19,20 +19,27 @@ Energy transition, Dynamical systems & control, Reduced-order modeling, Physics-
 
 Education
 ======
-* Ph.D., Applied Mathematics, University of Arizona, 2024 (expected)
+* Ph.D., Applied Mathematics, University of Arizona, 2025 (expected)
 * M.S., Applied Mathematics, University of Arizona, 2021
 * B.S., Mathematics & Physics, University of Arizona, 2016
 
 Research
 ======
-* __Optimal Natural Gas Flows in a Network with Uncertainty__
-  Dynamical systems, numerics, optimal (stochastic) control, differentiable programming, optimization
-
 * __Machine Learning Statistical Evolution of the Coarse-Grained Velocity Gradient Tensor__
-  Physics-informed machine learning, statistical mechanics, stochastic differential equations, big data
+We incorporate modern ML architectures in physics-informed reduced order models of the inherently chaotic evolution of the velocity gradient tensor in isotropic turbulence.
+
+*Physics-informed machine learning, interpretable ML, transformers, statistical mechanics, stochastic differential equations, reduced-order modeling, big data*
+
+* __Optimal Natural Gas Flows in a Network with Uncertainty__
+We work to determine optimal flows on a natural gas network under the coupled gas and energy grids upon inclusion of intermittent renewable energies and under stressing scenarios.
+*PDE-constrained optimization, differentiable programming, dynamical systems, numerics, optimal (stochastic) control, optimization under uncertainty*
+
 
 Work experience
 ======
+* 2024-05-13 to present:  __Graduate Student Researcher__
+  * Los Alamos National Laboratory
+  
 * 2020-05-13 to present: __Graduate Research Assistant__
   * University of Arizona
   * Applied Machine Learning to create hypothesis-free, reduced order models for turbulence.
@@ -76,6 +83,7 @@ Development Tools
 
 Fellowships
 ======
+* Orin Flanigan Scholarship: Pipeline Simulation Interest Group
 * NSF Data-Driven Research Training Group Traineeship
 * Roots for Resilience Data Science Scholarship
 
