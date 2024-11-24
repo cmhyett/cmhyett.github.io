@@ -41,7 +41,6 @@ Work experience
   
 * 2020-05-13 to present: __Graduate Research Assistant__
   * University of Arizona
-  * Applied Machine Learning to create hypothesis-free, reduced order models for turbulence.
 
 * 2023-05-13 to 2023-08-15: __Google Summer of Code, NumFocus, Contributor__
   * Julia, SciML
@@ -55,7 +54,9 @@ Work experience
 
 * 2016-05-13 to 2019-08-15: __Sofware Engineer II__
   * Raytheon Missile Systems, Tucson, AZ
-
+  * Led a small team designing, implementing, and integrating an embedded software subsystem.
+  * Worked as scrum master to remove impediments, communicate timelines and expectations intra- and inter-team, and triage and alleviate failures.
+  
 Skills
 ======
 * Mathematics
