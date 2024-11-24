@@ -33,7 +33,6 @@ We incorporate modern ML architectures in physics-informed reduced order models 
 We work to determine optimal flows on a natural gas network under the coupled gas and energy grids upon inclusion of intermittent renewable energies and under stressing scenarios.
   * *PDE-constrained optimization, differentiable programming, dynamical systems, numerics, optimal (stochastic) control, optimization under uncertainty*
 
-
 Work experience
 ======
 * 2020-05-13 to present:  __Graduate Student Researcher__, Los Alamos National Laboratory
@@ -46,36 +45,20 @@ Work experience
 * 2016-05-13 to 2019-08-15: __Sofware Engineer II__, Raytheon Missile Systems, Tucson, AZ
   * Led a small team designing, implementing, and integrating an embedded software subsystem.
   * Worked as scrum master to remove impediments, communicate timelines and expectations intra- and inter-team, and triage and alleviate failures.
-  
-Skills
-======
-* Mathematics
-  * Dynamical systems & Numerical methods
-  * Optimization & Control
-  * Stochastic Processes
-  * Analysis
-* Software/Computer Science
-  * Expertise in developing software for high performance, distributed systems
-  * Experience in software design
-  * Symbolic Programming
-  * Experience adapting algorithms to embedded, real-time systems
-* Physics
-  * Developing expertise in turbulent flows & statistical mechanics
-  * General knowledge of classical and non-relativistic quantum mechanics
-
-Development Tools
-======
-* __Languages:__ Julia, Python, C/C++, Bash, Matlab, Ada, Cuda
-* __HPC:__ Slurm, development and deployment of parallelizable codes, Docker
-* __Methodologies:__ Continuous integration, Test-driven development, Agile
-* __Open-source/collaboration:__ git, github, workflows
-* __ML Workflows:__ Pytorch, TensorFlow, Flux
 
 Fellowships
 ======
 * Orin Flanigan Scholarship: Pipeline Simulation Interest Group
 * NSF Data-Driven Research Training Group Traineeship
 * Roots for Resilience Data Science Scholarship
+
+Development Tools
+======
+* __Languages:__ Julia (SciML/DifferentialEquations/Flux), Python (pytorch/tensorflow), C/C++, Bash, Matlab, Ada, Cuda
+* __HPC:__ Slurm, MPI
+* __Methodologies:__ Continuous integration, Test-driven development, Agile
+* __Open-source/collaboration:__ git, github, workflows
+* __ML Workflows:__ Pytorch, TensorFlow, Flux
 
 Service and leadership
 ======
