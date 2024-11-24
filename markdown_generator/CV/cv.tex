@@ -11,6 +11,7 @@
 \moderncvcolor{blue}
 %\renewcommand*{\namefont}{\fontsize{30}{30}\mdseries\upshape}
 \usepackage[scale=0.85]{geometry}
+\usepackage{amssymb}
 %\setlength{\footskip}{136.00005pt}
 \newlength\Colsep
 \setlength\Colsep{10pt}
@@ -47,7 +48,7 @@
 
 % Social icons
 \social[github]{cmhyett}                              % optional, remove / comment the line if not wanted
-\social[googlescholar]{Criston Hyett}            % optional, remove / comment the line if not wanted
+\social[googlescholar]{-2j2594AAAAJ}            % optional, remove / comment the line if not wanted
 
 %----------------------------------------------------------------------------------
 %            content
@@ -59,9 +60,9 @@
 \makecvtitle
 \vspace*{-10mm}
 \section{Fields Of Interest}
-\hspace{1in}Dynamical Systems \& Control, Reduced-Order Modeling,
-
-\hspace{1in}Physics-Informed Machine Learning, Uncertainty Quantification
+\hspace{1in} \begin{minipage}[c]{0.8\linewidth}
+  Dynamical Systems \& Control, Reduced-Order Modeling, \\Physics-Informed Machine Learning, Uncertainty Quantification
+\end{minipage}
 
 \section{Education}
 \cventry{2019-2025  (expected)}{Ph.D.}{University of Arizona}{Tucson, AZ}{}{Applied Mathematics}
@@ -70,20 +71,28 @@
 
 \section{Research}
 
+\cvitem{2020-present}{\textbf{Machine Learning Statistical Evolution of the Velocity Gradient Tensor}}
+\hspace{1in} \begin{minipage}[c]{0.8\linewidth}
+We incorporate modern ML architectures in physics-informed reduced order models of the inherently chaotic evolution of the velocity gradient tensor in isotropic turbulence.
+
+  \begin{itemize}
+  \item[{\tiny $\blacksquare$}] \begin{small} \textit{Physics-informed machine learning}; \textit{Interpretable ML}; \textit{Transformers}; \textit{Reduced-order modeling} \end{small}
+  \end{itemize}
+\end{minipage}
+
+
 \cvitem{2021-present}{\textbf{Optimal Natural Gas Flows in a Network with Uncertainty}}
 
 \hspace{1in} We work to determine optimal flows on a natural gas network under the coupled gas
 
 \hspace{1in} and energy grids upon inclusion of intermittent renewable energies and under stressing scenarios.
-\vspace{0.02mm}
+\vspace{-4mm}
 
-
-\cvitem{2020-present}{\textbf{Machine Learning Statistical Evolution of the Velocity Gradient Tensor}}
-
-\hspace{1in} We use cutting edge machine learning techniques to create physics-informed reduced order
-
-\hspace{1in} models of the inherently chaotic evolution of the velocity gradient tensor in isotropic turbulence.
-
+\hspace{1in} \begin{minipage}[c]{0.9\linewidth}
+  \begin{itemize}
+  \item[{\tiny $\blacksquare$}] \begin{small} \textit{PDE-constrained optimization}; \textit{Differentiable programming}; \textit{Optimization under uncertainty} \end{small}
+  \end{itemize}
+\end{minipage}
 
 \section{Work Experience}
 \cventry{May '24 - present,\\ Summers 2020-22}{\vspace{0.15in}Graduate Student Researcher}{Los Alamos National Labs}{Los Alamos, NM}{}{}
@@ -96,15 +105,15 @@
 \vspace{-0.25cm}
 %\begin{minipage}[c][\Collen][c]{\dimexpr0.5\textwidth-0.5\Colsep\relax}
 \section{Computer Languages}
-\cvitemwithcomment{Julia}{Proficient}{Used daily in development of research software, (SciML/DifferentialEquations/Flux)}
+\cvitemwithcomment{Julia}{Proficient}{Develop research software, Contribute to OSS, (SciML/DifferentialEquations/Flux)}
+\cvitemwithcomment{Python}{Proficient}{Develop research software, (pytorch/tensorflow)}
 \cvitemwithcomment{C/C++}{Proficient}{Used extensively in an embedded environment at Raytheon Missile Systems}
-\cvitemwithcomment{Python}{Comfortable}{Used daily, (pytorch/tensorflow/petsc)}
 \cvitemwithcomment{Bash}{Comfortable}{Basic functionality used daily}
 \cvitemwithcomment{Matlab}{Comfortable}{}%Interpretted monthly}
 \cvitemwithcomment{Cuda}{Beginner}{}
 % \end{minipage}
 % \begin{minipage}[c][\Collen][c]{\dimexpr0.5\textwidth-0.5\Colsep\relax}
-\section{Computer skills}
+\section{Computer Skills}
 \cvitem{Open Software}{git/workflow, \LaTeX, Linux}
 \cvitem{HPC}{Slurm, Docker, MPI/parallel computing}
 \cvitem{Methodologies}{CI, TDD, Agile}
