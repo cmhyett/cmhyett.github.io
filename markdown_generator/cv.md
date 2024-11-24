@@ -36,7 +36,7 @@ We work to determine optimal flows on a natural gas network under the coupled ga
 
 Work experience
 ======
-* 2024-05-13 to present:  __Graduate Student Researcher__
+* 2020-05-13 to present:  __Graduate Student Researcher__
   * Los Alamos National Laboratory
   
 * 2020-05-13 to present: __Graduate Research Assistant__
@@ -45,12 +45,6 @@ Work experience
 * 2023-05-13 to 2023-08-15: __Google Summer of Code, NumFocus, Contributor__
   * Julia, SciML
   * Developed software to symbolically discretize a given PDE on a staggered grid and handle boundary conditions
-
-* 2020-05-13 to 2022-08-15: __Graduate Student Researcher__
-  * Los Alamos National Laboratory
-
-* 2019-08-15 to 2020-05-13: __Graduate Teaching Assitant__
-  * University of Arizona
 
 * 2016-05-13 to 2019-08-15: __Sofware Engineer II__
   * Raytheon Missile Systems, Tucson, AZ
